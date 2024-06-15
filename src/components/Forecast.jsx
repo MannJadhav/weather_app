@@ -17,7 +17,7 @@ const Forcast = ({forecast,type}) => {
   return (
     <div>
       <div className='flex items-center justify-start mt-6'>
-        <p className='front-medium'>Daily forecast</p>
+        <p className='front-medium'>{type==='daily'?"Daily":"Hourly"}</p>
       </div>
       <hr className='my-1'/>
 
